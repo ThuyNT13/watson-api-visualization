@@ -1,0 +1,120 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+
+<!-- You might want to try something fancier: -->
+<!-- html/nunjucks docs: https://mozilla.github.io/nunjucks/ -->
+<!-- pug: https://pugjs.org/ -->
+<!-- haml: http://haml.info/ -->
+<!-- hbs(handlebars): http://handlebarsjs.com/ -->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>Watson Personality API and D3.js</title>
+    <meta name="description" content="A cool thing made with Glitch">
+    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+  </head>
+  <body>
+
+    <main>
+    <form action="/" method="post">
+      <p>
+        <label>
+          Text to analyze 🔬
+          <textarea name="text"></textarea>
+        </label>
+      </p>
+      <p>
+        <button type="submit">
+          Submit
+        </button>
+      </p>
+    </form>
+      
+    <script type="text/javascript">
+      // ensure center of circles at least 900 px from edge of viewport??
+      var padding = 900;
+
+      // the data
+      // var theData = ([400, 2000, 900, 9800, 8999, 11000, 1000, 700, 12080, 280, 1895, 6576]);
+
+      var thePersonality = ([
+        {
+          label: "Openness",
+          color: "#FF9901", // warm orange 
+          value: 0.9970814244982862
+        },
+        {
+          label: "Conscientiousness",
+          color: "#52154E", // purple
+          value: 0.986401677449357
+        },
+        {
+          label: "Extraversion",
+          color: "#00A896", // open sea green
+          value: 0.08530058556548387
+        },
+        {
+          label: "Agreeableness",
+          color: "#8E1C3E", // easy mauve
+          value: 0.18753528603194114
+        },
+        {
+          label: "Emotional range",
+          color: "#FF3333", // fiery orange
+          value: 0.9438564164580441
+        }
+      ]);
+      
+      // Step 1: Draw one circle for each personality trait, adjust radius to value
+      // Step 2: Color the circle with the color from the data
+      // Step 3: Label the circle with the label from the data
+      
+      // TODO: Avoid overlapping circles
+
+      // TODO: Make a form that a visitor can use to submit some text for analysis
+      // TODO: Submit form data to Watson and then generate chart from the response   
+ 
+      var svg = d3.selectAll("body").append("svg")
+        .attr("width", 500)
+        .attr("height", 500)
+      
+      // select all circles
+      svg.selectAll("circle")
+        
+        // join data to circle selection
+        .data(thePersonality)
+        .enter().append("circle")      
+        // set style and attributes for circles
+          .style("stroke", "#A997DF")
+          .style("stroke-width", "2")
+          .attr("cx", function() { return Math.random() * 500; })
+          .attr("cy", function() { return Math.random() * 500; })
+          .attr("r", function(d) {return d.value * 100 } )
+          .style('fill', function(d) { return d.color })
+
+    </script>
+
+
+    </main>
+
+    <footer>
+      Made with <a href="https://glitch.com">Glitch</a>!
+    </footer>
+    
+    
+    <!-- import the webpage's client-side javascript file -->
+    <script src="/client.js"></script>
+
+
+  </body>
+</html>
