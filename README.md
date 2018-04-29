@@ -7,7 +7,7 @@ The App
 ------------
 
 On the front-end,
-- using **D3.js** to visualize the data output into colorful circles
+- using **D3.js** to visualize the data outputted from 
 
 On the back-end,
 - *Node* built on *Express*
