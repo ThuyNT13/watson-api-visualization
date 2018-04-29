@@ -1,8 +1,5 @@
 {
-  "//1": "describes your app and its dependencies",
-  "//2": "https://docs.npmjs.com/files/package.json",
-  "//3": "updating this file will download and update your packages",
-  "name": "hello-express",
+  "name": "watson-personality-api",
   "version": "0.0.1",
   "description": "A simple Node app built on Express, to access Watson API",
   "main": "server.js",
@@ -10,18 +7,22 @@
     "start": "node server.js"
   },
   "dependencies": {
-    "express": "^4.16.3"
+    "express": "^4.16.3",
+    "watson-developer-cloud": "^3.4.0",
+    "body-parser": "^1.18.2"
   },
   "engines": {
     "node": "8.x"
   },
   "repository": {
-    "url": "https://glitch.com/edit/#!/hello-express"
+    "url": "https://glitch.com/edit/#!/watson-personality-api"
   },
   "license": "MIT",
   "keywords": [
     "node",
     "glitch",
-    "express"
+    "express",
+    "Watson-API",
+    "Personality Insights"
   ]
 }
