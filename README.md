@@ -11,7 +11,7 @@ On the front-end,
 
 On the back-end,
 - *Node* built on *Express*
-- derive linguistic analytics from text input by utilizing [**IBM Watson Personality Insights API**](https://console.bluemix.net/docs/services/personality-insights/getting-started.html#gettingStarted)
+- derive linguistic analytics from text input by utilizing [**IBM Watson Personality Insights API**](https://personality-insights-demo.ng.bluemix.net)
 
 Inspiration
 - [D3 Layout Pack](https://bl.ocks.org/jiankuang/93dba6fac49222458b3b35e7c233bace)
