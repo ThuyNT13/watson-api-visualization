@@ -1,23 +1,27 @@
-Welcome to Glitch
+watson-personality-api
 =================
 
-Click `Show` in the header to see your app live. Updates to your code will instantly deploy and update live.
+Because we wanted to see what fun could be had from playing with **IBM Watson API** and **D3.js**.
 
-**Glitch** is the friendly community where you'll build the app of your dreams. Glitch lets you instantly create, remix, edit, and host an app, bot or site, and you can invite collaborators or helpers to simultaneously edit code with you.
-
-Find out more [about Glitch](https://glitch.com/about).
-
-
-Your Project
+The App
 ------------
 
 On the front-end,
-- edit `public/client.js`, `public/style.css` and `views/index.html`
-- drag in `assets`, like images or music, to add them to your project
+- using **D3.js** to visualize the data outputted from 
 
 On the back-end,
-- your app starts at `server.js`
-- add frameworks and packages in `package.json`
-- safely store app secrets in `.env` (nobody can see this but you and people you invite)
+- *Node* built on *Express*
+- derive linguistic analytics from text input by utilizing [**IBM Watson Personality Insights API**](https://console.bluemix.net/docs/services/personality-insights/getting-started.html#gettingStarted)
 
+Inspiration
+- [D3 Layout Pack](https://bl.ocks.org/jiankuang/93dba6fac49222458b3b35e7c233bace)
 
+Colloboratively created on [**Glitch**](https://glitch.com/about) and [**GitHub**](https://github.com).
+
+## Support
+
+Please open or respond to [an issue](https://github.com/ThuyNT13/watson-api-visualization/issues) for support.
+
+## Contributing
+
+Please contribute using [Github Flow](https://guides.github.com/introduction/flow/). Create a branch, add commits, and open a [pull request](https://github.com/ThuyNT13/watson-api-visualization/pulls). Please don't push to master.

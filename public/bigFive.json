@@ -1,0 +1,25 @@
+{
+  "name": "Big Five",
+  "children": [
+    {
+      "name": "Openness",
+      "value": 0.770814244982862
+    },
+    {
+      "name": "Conscientiousness",
+      "value": 0.586401677449357
+    },
+    {
+      "name": "Extraversion",
+      "value": 0.08530058556548387
+    },
+    {
+      "name": "Agreeableness",
+      "value": 0.18753528603194114
+    },
+    {
+      "name": "Emotional range",
+      "value": 0.9438564164580441
+    }
+  ]
+}

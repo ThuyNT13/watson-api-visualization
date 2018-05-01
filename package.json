@@ -1,7 +1,7 @@
 {
   "name": "watson-personality-api",
   "version": "0.0.1",
-  "description": "A simple Node app built on Express, to access Watson API",
+  "description": "A simple Node app built on Express, to access Watson API and visualize data with D3.js",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
@@ -23,6 +23,7 @@
     "glitch",
     "express",
     "Watson-API",
-    "Personality Insights"
+    "Personality Insights",
+    "D3.js"
   ]
 }
