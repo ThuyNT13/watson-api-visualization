@@ -7,7 +7,7 @@ The App
 ------------
 
 On the front-end,
-- using **D3.js** to visualize the data outputted from 
+- using **D3.js** to visualize the data outputted from [**Personality Insights**](https://www.ibm.com/watson/services/personality-insights/)
 
 On the back-end,
 - *Node* built on *Express*
